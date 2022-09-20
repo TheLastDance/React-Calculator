@@ -1,0 +1,70 @@
+@import "resets";
+$bc-color: #456d67;
+
+.app {
+    background: $bc-color;
+    color: aqua;
+    user-select: none;
+    font-size: 22px;
+
+    .border {
+        border: 3px solid white;
+    }
+
+    .btn {
+        border-radius: 0;
+    }
+
+
+    .main-calc {
+        width: 400px;
+        height: 500px;
+
+        .fontSizeOperator {
+            font-size: 28px;
+        }
+
+        .fontSizeDigit {
+            font-size: 22px;
+        }
+
+        @media(max-width:450px) {
+            width: 300px;
+            height: 400px;
+
+            #display {
+                font-size: 16px;
+            }
+        }
+
+        @media(max-height:500px) {
+            width: 200px;
+            height: 280px;
+
+            #display {
+                font-size: 16px;
+            }
+
+            .fontSizeOperator {
+                font-size: 16px;
+            }
+
+            .fontSizeDigit {
+                font-size: 14px;
+            }
+        }
+
+        .btn:focus,
+        .btn.focus {
+            outline: 0;
+        }
+
+        .btn:focus,
+        .btn:active {
+            box-shadow: none !important;
+        }
+
+
+    }
+
+}
